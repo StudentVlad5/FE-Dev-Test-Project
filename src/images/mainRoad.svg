@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Шар_2" data-name="Шар 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178.4 71.75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #575c6c;
+      }
+    </style>
+  </defs>
+  <g id="_Шар_1-2" data-name="Шар 1">
+    <polygon class="cls-2" points="178.4 68.85 2.22 71.75 0 71.75 81.94 .06 95.7 .06 178.4 68.85"/>
+    <g id="Road_Line" data-name="Road Line">
+      <!-- <polygon class="cls-1" points="95.08 68.01 92.26 67.85 92.22 67.19 90.89 40.72 92.37 40.47 95.08 68.01"/> -->
+      <!-- <polygon class="cls-2" points="91.32 56.38 94.14 56.5 93.53 51.35 90.89 51.24 91.32 56.38"/> -->
+      <polygon class="cls-2" points="90.44 44.96 93.26 45.08 92.66 39.93 90.01 39.82 90.44 44.96"/>
+    </g>
+    <polygon class="cls-1" points="1.74 71.65 .99 71.7 0 71.75 81.94 .06 82.19 .08 1.74 71.65"/>
+    <polygon class="cls-1" points="176.95 68.73 178.4 68.85 95.71 0 95.41 0 176.95 68.73"/>
+  </g>
+</svg>

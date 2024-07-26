@@ -1,0 +1,208 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+    width: 100vw;
+    padding: 10px 50px;
+
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+        margin: 0 auto;
+    }
+
+    &__container {
+        @media screen and (min-width: $desktop) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            align-content: center;
+
+            width: 100%;
+            max-width: calc($desktop - 100px);
+            margin: 0 auto;
+            padding: 25px 50px;
+
+            background-color: var(--color-accent);
+            border-radius: 25px;
+            border: 3px solid #FFF;
+        }
+    }
+
+    &__logo {
+        display: none;
+
+        @media screen and (min-width: $desktop) {
+            display: block;
+        }
+    }
+
+    &__navigation {
+        display: none;
+
+        @media screen and (min-width: $desktop) {
+            display: flex;
+        }
+    }
+}
+
+.navigation {
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+
+        color: var(--color-white);
+        font-family: var(--font-family-main);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        text-transform: uppercase;
+
+        transition: color var(--animation);
+
+        &:hover,
+        &:focus {
+            font-weight: 700;
+        }
+    }
+}
+
+// mobile menu
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 11;
+
+    width: 100vw;
+    height: 100vh;
+
+    padding: 31px 100px 0 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transform: translateX(100%);
+    transition: transform var(--animation);
+
+    background: rgb(136, 204, 223);
+    background: linear-gradient(180deg,
+            rgba(136, 204, 223, 1) 0%,
+            rgba(200, 233, 148, 1) 50%,
+            rgba(9, 92, 36, 1) 100%);
+    background-position: center;
+    overflow-y: scroll;
+
+    @media screen and (min-width: $tablet) {
+        padding: 35px 100px 0 100px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: none;
+    }
+
+    &.is-open {
+        visibility: visible;
+        transform: translateX(0);
+        transition: transform var(--animation);
+    }
+
+    &__logo {
+        text-align: center;
+    }
+
+    &__navigation {
+        margin-top: 74px;
+
+        &__list {
+            flex-direction: column;
+            gap: 25px;
+
+            & .navigation__link {
+                color: var(--color-black);
+                font-size: 25px;
+                text-align: center;
+
+                &--active {
+                    color: var(--color-accent);
+                }
+            }
+        }
+    }
+}
+
+.mobile-btn {
+    position: absolute;
+    top: 55px;
+    right: 34px;
+    z-index: 11;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    width: 40px;
+    height: 40px;
+
+    color: var(--color-accent);
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+    transition: color var(--animation);
+
+    &:hover,
+    &:focus {
+        color: var(--color-white);
+    }
+
+    &.is-open {
+        position: absolute;
+        top: 55px;
+        right: 34px;
+        z-index: 12;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: none;
+    }
+
+
+    &__icon {
+        fill: currentColor;
+
+        &-open {
+            display: block;
+
+            .mobile-btn.is-open & {
+                display: none;
+            }
+        }
+    }
+
+    &__icon-close {
+        display: none;
+
+        .mobile-btn.is-open & {
+            position: absolute;
+            top: 55px;
+            right: 34px;
+            z-index: 12;
+
+            display: block;
+        }
+    }
+}

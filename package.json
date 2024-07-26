@@ -1,0 +1,33 @@
+{
+  "name": "gsap_animate",
+  "source": "src/index.html",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://studentvlad5.github.io/gsap_animate/",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /.//"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/studentvlad5/gsap_animate.git"
+  },
+  "keywords": [],
+  "author": "Vlad",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+  },
+  "dependencies": {
+    "gsap": "^3.12.3",
+    "modern-normalize": "^1.1.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.2",
+    "parcel": "^2.10.2",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4",
+    "process": "^0.11.10"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
