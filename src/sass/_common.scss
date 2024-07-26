@@ -1,5 +1,10 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+@font-face {
+  font-family: 'Satoshi-Regular';
+  src: URL('../font/Satoshi_Complete/OTF/Satoshi-Regular.otf') format('truetype');
+}
+
 $mobile: 375px;
 $tablet: 768px;
 $desktop: 1440px;

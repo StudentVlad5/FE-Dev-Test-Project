@@ -1,16 +1,16 @@
 {
-  "name": "gsap_animate",
+  "name": "FE-Dev-Test-Project",
   "source": "src/index.html",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://studentvlad5.github.io/gsap_animate/",
+  "homepage": "https://studentvlad5.github.io/FE-Dev-Test-Project/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /.//"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/studentvlad5/gsap_animate.git"
+    "url": "git+https://github.com/studentvlad5/FE-Dev-Test-Project.git"
   },
   "keywords": [],
   "author": "Vlad",
