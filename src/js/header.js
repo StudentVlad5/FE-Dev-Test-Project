@@ -7,7 +7,7 @@ import { menu } from "./CONSTANT";
     (it) =>
       (menuList =
         menuList +
-        `<li class="navigation__item" id="${it}">
+        `<li class="navigation__item" id="${it}" data-info="${it}">
       <a class="navigation__link" href="#${it}" aria-label="${it}">
         ${it}
       </a>
@@ -17,7 +17,7 @@ import { menu } from "./CONSTANT";
     (it) =>
       (mobileMenu =
         mobileMenu +
-        `<li class="navigation__item">
+        `<li class="navigation__item" data-info="${it}>
       <a class="navigation__link" href="#${it}" aria-label="${it}">
         ${it}
       </a>

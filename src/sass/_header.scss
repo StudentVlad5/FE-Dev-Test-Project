@@ -1,11 +1,11 @@
 @keyframes button_annimate {
   100% {
-    transform: scale(40000%);
+    transform: scale(400000%);
   }
 }
 @keyframes button_annimate_return {
   25% {
-    transform: scale(30000%);
+    transform: scale(300000%);
   }
   100% {
     transform: scale(100%);
@@ -133,7 +133,7 @@
   transform: translateX(100%);
   transition: transform var(--animation);
 
-  background: url('../images/mobile_background.svg');
+  background: url('../images/header/mobile_background.svg');
 
   background-position: center;
   overflow-y: scroll;
@@ -144,6 +144,19 @@
 
   @media screen and (min-width: $desktop) {
     display: none;
+  }
+  &_form-button {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    justify-content: center;
+    margin-top: 249px;
+    padding: 18px 123px;
+    max-width: 335px;
+    align-items: center;
+    border: 1px solid var(--color-white);
+    border-radius: 100px;
+    cursor: pointer;
   }
   &.is-open {
     visibility: visible;
@@ -254,5 +267,8 @@
     animation-duration: 1.2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
   }
 }
