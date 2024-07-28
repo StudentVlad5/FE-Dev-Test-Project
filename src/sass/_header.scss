@@ -1,32 +1,14 @@
 @keyframes button_annimate {
-  20% {
-    transform: scale(10000%);
-  }
-  50% {
-    transform: scale(20000%);
-  }
-  75% {
-    transform: scale(30000%);
-  }
   100% {
     transform: scale(40000%);
-    display: none;
   }
 }
 @keyframes button_annimate_return {
-  20% {
+  25% {
     transform: scale(30000%);
-    display: block;
-  }
-  50% {
-    transform: scale(20000%);
-  }
-  75% {
-    transform: scale(10000%);
   }
   100% {
     transform: scale(100%);
-    display: none;
   }
 }
 
@@ -67,7 +49,7 @@
 
   &__logo {
     display: block;
-    z-index: 12;
+    z-index: 13;
 
     & > img {
       // display: none;
@@ -137,7 +119,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 11;
+  z-index: 12;
 
   width: 100vw;
   height: 100vh;
@@ -151,7 +133,7 @@
   transform: translateX(100%);
   transition: transform var(--animation);
 
-  background: rgb(136, 204, 223);
+  background: url('../images/mobile_background.svg');
 
   background-position: center;
   overflow-y: scroll;
@@ -171,7 +153,7 @@
   }
 
   &__navigation {
-    margin-top: 74px;
+    margin-top: 9px;
 
     &__list {
       display: flex;
@@ -180,7 +162,7 @@
       align-items: flex-start;
       flex-direction: column;
       justify-content: flex-start;
-      gap: 20px;
+      gap: 12px;
       color: var(--color-white);
       font-size: var(--font-size-20);
       font-style: normal;
@@ -206,6 +188,7 @@
   z-index: 11;
 
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
 
@@ -224,7 +207,7 @@
   }
 
   &.is-open {
-    z-index: 12;
+    z-index: 13;
   }
 
   @media screen and (min-width: $desktop) {
@@ -235,7 +218,6 @@
     position: relative;
     border-radius: 100px;
     background-color: var(--color-dark-blue);
-
     &-open {
       display: block;
 
@@ -249,7 +231,7 @@
     display: none;
 
     .mobile-btn.is-open & {
-      z-index: 12;
+      z-index: 14;
       display: block;
     }
   }
@@ -257,19 +239,20 @@
 
 .animation_container {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 10px;
-  height: 10px;
+  top: 35px;
+  right: 36px;
+  width: 5px;
+  height: 5px;
   border-radius: 100px;
   background-color: var(--color-dark-blue);
   animation-name: button_annimate_return;
   animation-duration: 1.2s;
   animation-iteration-count: 1;
-  z-index: -1;
+  z-index: 1;
   &.animate {
     animation-name: button_annimate;
     animation-duration: 1.2s;
     animation-iteration-count: 1;
+    animation-fill-mode: forwards;
   }
 }

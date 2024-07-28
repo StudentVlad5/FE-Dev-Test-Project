@@ -1,4 +1,4 @@
-const menu = ["home", "about", "services", "careers"];
+import { menu } from "./CONSTANT";
 
 (function addmenu() {
   let menuList = "";
@@ -24,5 +24,7 @@ const menu = ["home", "about", "services", "careers"];
     </li>`)
   );
   document.querySelector(".navigation__list").innerHTML = menuList;
-  document.querySelector(".mobile-menu__navigation__list").innerHTML = mobileMenu;
+  document.querySelector(
+    ".mobile-menu__navigation__list"
+  ).innerHTML = mobileMenu;
 })();
