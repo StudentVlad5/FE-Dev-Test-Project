@@ -4,7 +4,8 @@
   margin-right: auto;
   overflow: hidden;
   padding: 81px 20px;
-  @media screen and (min-width: $desktop) {
+
+  @include mq($desktop) {
     width: 100%;
     max-width: $desktop;
     padding: 0 20px;

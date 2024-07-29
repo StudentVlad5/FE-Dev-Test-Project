@@ -11,7 +11,8 @@
     background: url('../images/hero/hero.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    @media screen and (min-width: $desktop) {
+
+    @include mq($desktop) {
       width: 100%;
       background: url('../images/hero/hero_desctop.svg');
       justify-content: center;
@@ -25,12 +26,14 @@
       text-align: left;
       line-height: 44px;
     }
-    @media screen and (min-width: $desktop) {
+
+    @include mq($desktop) {
       font-size: var(--font-size-60);
       font-style: normal;
       line-height: 67px;
     }
   }
+
   &__list {
     position: relative;
     display: flex;
@@ -38,7 +41,8 @@
     justify-content: center;
     align-items: center;
     gap: 11px;
-    @media screen and (min-width: $desktop) {
+
+    @include mq($desktop) {
       width: 100%;
       flex-direction: row;
       flex-wrap: wrap;
@@ -46,6 +50,7 @@
       transform: translateY(-140px);
     }
   }
+
   &__item {
     position: relative;
     width: 335px;
@@ -54,7 +59,8 @@
     background-size: 100% 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    @media screen and (min-width: $desktop) {
+
+    @include mq($desktop) {
       width: 588px;
       height: 280px;
     }
@@ -72,23 +78,27 @@
       line-height: normal;
       text-transform: lowercase;
       text-transform: capitalize;
-      @media screen and (min-width: $desktop) {
+
+      @include mq($desktop) {
         font-size: 26px;
         max-width: 180px;
         top: 35px;
         left: 35px;
       }
     }
+
     &-navigationlink {
       text-decoration: none;
     }
+
     &-link {
       position: absolute;
       top: 19.75px;
       right: 19.75px;
       width: 12.5px;
       height: 12.5px;
-      @media screen and (min-width: $desktop) {
+
+      @include mq($desktop) {
         top: 35px;
         right: 35px;
         width: 22px;
