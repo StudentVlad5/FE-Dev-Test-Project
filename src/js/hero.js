@@ -1,4 +1,4 @@
-import { heroServices } from "./CONSTANT";
+import { heroServices } from "./DATA";
 
 (function addHeroServices() {
   let heroServicesSection = "";

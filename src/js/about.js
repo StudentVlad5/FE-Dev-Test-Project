@@ -1,5 +1,5 @@
-import { about } from "./CONSTANT";
-import { aboutHistory } from "./CONSTANT";
+import { about } from "./DATA";
+import { aboutHistory } from "./DATA";
 
 (function addAbout() {
   let aboutInfo = "";

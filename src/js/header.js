@@ -1,4 +1,4 @@
-import { menu } from "./CONSTANT";
+import { menu } from "./DATA";
 
 (function addmenu() {
   let menuList = "";
