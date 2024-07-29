@@ -36,7 +36,7 @@ document.onkeydown = function (evt) {
   if (evt.key === "Escape" || evt.key === "Esc") {
     menuBtnRef.setAttribute("aria-expanded", true);
     menuBtnRef.classList.remove("is-open");
-    menuLogo.classList.remove("is-open");
+    menuLogo.classList.add("is-open");
     buttonAnimation.classList.remove("animate");
     mobileMenuRef.classList.remove("is-open");
     mobileLogo.classList.remove("is-open");
@@ -45,18 +45,26 @@ document.onkeydown = function (evt) {
 };
 // add class "active" for menu
 
-const handleChangeActiveClass = (e) => {
-  // e.preventDefault();
-  const navItemList = document.querySelectorAll(".navigation__item");
-  document.getElementById(e.target.dataset.info).scrollIntoView();
-  setTimeout(() => window.scrollBy(0, -200), 100);
-  if (navItemList) {
-    navItemList.forEach((it) => {
-      if (it.dataset.info === e.target.dataset.info) {
-        it.classList.add("active");
+window.addEventListener("scroll", function handleChangeActiveClass(e) {
+  e.preventDefault();
+  let scrollY = window.scrollY;
+  const navItemList = document.querySelectorAll(".navigation__link");
+
+  const sectionList = document.querySelectorAll(".section");
+  navItemList.forEach((link) => {
+    let section = document.querySelector(link.hash);
+
+    if (section) {
+      const sectionHeight = section.offsetHeight;
+      const sectionTop = section.offsetTop - 100;
+
+      if (scrollY < sectionTop && link.classList.contains("active")) {
+        link.classList.add("active");
+      } else if (scrollY > sectionTop && scrollY < sectionTop + sectionHeight) {
+        link.classList.add("active");
       } else {
-        it.classList.remove("active");
+        link.classList.remove("active");
       }
-    });
-  }
-};
+    }
+  });
+});

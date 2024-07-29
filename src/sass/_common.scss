@@ -52,6 +52,17 @@ p {
   padding: 0;
   margin: 0;
 }
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 71px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 100px;
+  }
+}
+
 .blue-button {
   display: flex;
   flex-wrap: nowrap;
@@ -71,4 +82,10 @@ p {
   text-transform: none;
   white-space: nowrap;
   cursor: pointer;
+}
+.upperline {
+  border-top: 1px solid grey;
+  @media screen and (min-width: $desktop) {
+    border-top: none;
+  }
 }

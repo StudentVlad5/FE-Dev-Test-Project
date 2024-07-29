@@ -170,32 +170,30 @@
 
     &__list {
       display: flex;
+      width: 100%;
       flex-direction: column;
       box-sizing: border-box;
       align-items: flex-start;
       flex-direction: column;
       justify-content: flex-start;
       gap: 12px;
-      color: var(--color-white);
-      font-size: var(--font-size-20);
-      font-style: normal;
-      text-align: left;
-      font-family: var(--font-family-main);
-      font-weight: 400;
-      line-height: 28px;
-      text-transform: capitalize;
-
-      & .navigation__link {
+    }
+      &__link {
         color: var(--color-white);
         font-size: var(--font-size-20);
-
+        font-style: normal;
+        text-align: left;
+        font-family: var(--font-family-main);
+        font-weight: 400;
+        line-height: 28px;
+        text-transform: capitalize;
         &--active {
           color: var(--color-accent);
         }
       }
     }
   }
-}
+
 
 .mobile-btn {
   z-index: 11;
