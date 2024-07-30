@@ -230,7 +230,7 @@
     z-index: 13;
   }
 
-  @include mq($desktop) {
+  @include mq(desktop) {
     display: none;
   }
 
