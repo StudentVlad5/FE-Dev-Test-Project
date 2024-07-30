@@ -1,6 +1,6 @@
 const menuBtnRef = document.querySelector('.mobile-btn');
 const mobileMenuRef = document.querySelector('.mobile-menu');
-const buttonAnimation = document.querySelector('.animation_container');
+const buttonAnimation = document.querySelector('.animation__container');
 const menuLogo = document.querySelector('.logo--dark');
 const mobileLogo = document.querySelector('.logo--bright');
 const menuLinks = document.querySelector('.mobile-menu__navigation__list');

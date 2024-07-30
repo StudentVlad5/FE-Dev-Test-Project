@@ -53,7 +53,7 @@
     display: block;
     z-index: 13;
 
-    &>img {
+    & > img {
       // display: none;
       width: 200px;
       height: 35.37px;
@@ -204,7 +204,6 @@
   }
 }
 
-
 .mobile-btn {
   z-index: 11;
 
@@ -259,7 +258,7 @@
   }
 }
 
-.animation_container {
+.animation__container {
   position: absolute;
   top: 35px;
   right: 36px;
