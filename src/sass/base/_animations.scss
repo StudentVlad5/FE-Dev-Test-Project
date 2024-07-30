@@ -1,0 +1,15 @@
+@keyframes button_annimate {
+    100% {
+        transform: scale(400000%);
+    }
+}
+
+@keyframes button_annimate_return {
+    25% {
+        transform: scale(300000%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+}
