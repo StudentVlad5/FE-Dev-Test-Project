@@ -53,7 +53,7 @@
     display: block;
     z-index: 13;
 
-    & > img {
+    &>img {
       // display: none;
       width: 200px;
       height: 35.37px;
@@ -144,7 +144,7 @@
   background-position: center;
   overflow-y: scroll;
 
-  @include mq($tablet) {
+  @include mq(tablet) {
     padding: 140px 40px;
   }
 
@@ -198,7 +198,7 @@
       text-transform: capitalize;
 
       &--active {
-        color: var(--color-accent);
+        color: var(--color-orange-red);
       }
     }
   }
