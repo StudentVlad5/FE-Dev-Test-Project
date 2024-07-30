@@ -89,8 +89,15 @@ p {
     border-top: none;
   }
 }
+.upperline_container {
+  border-top: none;
+  @media screen and (min-width: $desktop) {
+    border-top: 1px solid grey;
+  }
+}
 .section.about.move_up {
   @media screen and (min-width: $desktop) {
     transform: translateY(-140px);
   }
 }
+
