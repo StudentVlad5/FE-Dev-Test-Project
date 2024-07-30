@@ -89,3 +89,8 @@ p {
     border-top: none;
   }
 }
+.section.about.move_up {
+  @media screen and (min-width: $desktop) {
+    transform: translateY(-140px);
+  }
+}

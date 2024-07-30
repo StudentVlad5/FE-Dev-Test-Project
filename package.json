@@ -19,7 +19,6 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
-    "gsap": "^3.12.3",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
