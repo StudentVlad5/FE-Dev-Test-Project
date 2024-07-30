@@ -19,7 +19,6 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
-    "gsap": "^3.12.3",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
@@ -27,7 +26,8 @@
     "parcel": "^2.10.2",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4",
-    "process": "^0.11.10"
+    "process": "^0.11.10",
+    "sass": "^1.77.8"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
 }

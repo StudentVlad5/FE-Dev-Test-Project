@@ -18,7 +18,7 @@ import { aboutHistory } from "./DATA";
     (it) =>
       (aboutInfo =
         aboutInfo +
-        `<li class="about__listOfHistory-item"><img class="about__listOfHistory-img" src="${it.pic}" alt="${it.alt}"/><p class="about__listOfHistory-text">${it.title}</p></li>`)
+        `<li class="about__listOfHistory-item"><img class="about__listOfHistory-img" src="${it.pic}" alt="${it.alt}"/><p class="about__listOfHistory-text ${it.alt}">${it.title}</p></li>`)
   );
   document.querySelector(".about__listOfHistory").innerHTML = aboutInfo;
 })();

@@ -1,22 +1,24 @@
 :root {
-    // colors
-    --color-orange-red: #f2683c;
-    --color-black: #1d1d1d;
-    --color-white: #ffffff;
-    --color-dark-blue: #18306c;
-    --color-alice-blue: #eaf0ff;
+  // colors
+  --color-orange-red: #f2683c;
+  --color-black: #1d1d1d;
+  --color-white: #ffffff;
+  --color-dark-blue: #18306c;
+  --color-alice-blue: #eaf0ff;
 
-    // fonts
-    --font-family-main: 'Satoshi-Regular', sans-serif;
-    --font-family-title: 'Inter', sans-serif;
-    --font-size-16: 16px;
-    --font-size-18: 18px;
-    --font-size-20: 20px;
-    --font-size-26: 26px;
-    --font-size-34: 34px;
-    --font-size-45: 45px;
-    --font-size-60: 60px;
+  // fonts
+  --font-family-main: 'Satoshi-Regular', sans-serif;
+  --font-family-title: 'Inter', sans-serif;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+  --font-size-22: 22px;
+  --font-size-24: 24px;
+  --font-size-26: 26px;
+  --font-size-34: 34px;
+  --font-size-45: 45px;
+  --font-size-60: 60px;
 
-    // transition
-    --animation: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  // transition
+  --animation: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }

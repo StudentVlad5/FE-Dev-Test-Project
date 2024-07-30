@@ -82,7 +82,7 @@ export const aboutHistory = [
   {
     title:
       "Throughout the company’s progress, we have remained committed to our core values and vision. Making a difference in the lives of the people and communities we serve is paramount to our work. It is the why we work hard and smart to deliver the highest quality of services in the civil engineering industry.",
-    pic: aboutpic2,    
-    alt: "about team 2",
+    pic: aboutpic2,
+    alt: "about team2",
   },
 ];
