@@ -5,7 +5,7 @@
   overflow: hidden;
   padding: 81px 20px;
 
-  @include mq($desktop) {
+  @include mq(desktop) {
     width: 100%;
     max-width: $desktop;
     padding: 0 20px;

@@ -12,7 +12,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    @include mq($desktop) {
+    @include mq(desktop) {
       width: 100%;
       background: url('../images/hero/hero_desctop.svg');
       justify-content: center;
@@ -27,7 +27,7 @@
       line-height: 44px;
     }
 
-    @include mq($desktop) {
+    @include mq(desktop) {
       font-size: var(--font-size-60);
       font-style: normal;
       line-height: 67px;
@@ -42,7 +42,7 @@
     align-items: center;
     gap: 11px;
 
-    @include mq($desktop) {
+    @include mq(desktop) {
       width: 100%;
       flex-direction: row;
       flex-wrap: wrap;
@@ -60,7 +60,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    @include mq($desktop) {
+    @include mq(desktop) {
       width: 588px;
       height: 280px;
     }
@@ -79,7 +79,7 @@
       text-transform: lowercase;
       text-transform: capitalize;
 
-      @include mq($desktop) {
+      @include mq(desktop) {
         font-size: 26px;
         max-width: 180px;
         top: 35px;
@@ -98,7 +98,7 @@
       width: 12.5px;
       height: 12.5px;
 
-      @include mq($desktop) {
+      @include mq(desktop) {
         top: 35px;
         right: 35px;
         width: 22px;
