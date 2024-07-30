@@ -1,0 +1,39 @@
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+
+    &__item {
+        &--bgc {
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 30px;
+        height: 30px;
+
+        color: var(--color-dark-blue);
+        border-radius: 50%;
+        background-color: var(--color-white);
+
+        transition: background-color var(--animation);
+
+        &:hover,
+        &:focus {
+            color: var(--color-white);
+            background-color: var(--color-orange-red);
+        }
+    }
+
+    &__icon {
+        fill: currentColor;
+    }
+}
