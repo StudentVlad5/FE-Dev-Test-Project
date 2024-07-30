@@ -1,5 +1,5 @@
 .section .about {
-  @include mq($desktop) {
+  @include mq(desktop) {
     transform: translateY(-140px);
   }
 

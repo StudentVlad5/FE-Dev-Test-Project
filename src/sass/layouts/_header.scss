@@ -23,7 +23,7 @@
   height: 81px;
   width: 100vw;
 
-  @include mq($desktop) {
+  @include mq(desktop) {
     width: $desktop;
     height: 133px;
     margin: 0 auto;
@@ -42,7 +42,7 @@
     padding: 34px 20px 22.7px;
     background-color: var(--color-white);
 
-    @include mq($desktop) {
+    @include mq(desktop) {
       max-width: calc($desktop);
       margin: 0 auto;
       padding: 25px 60px;
@@ -53,7 +53,7 @@
     display: block;
     z-index: 13;
 
-    & > img {
+    &>img {
       // display: none;
       width: 200px;
       height: 35.37px;
@@ -71,7 +71,7 @@
   &__navigation {
     display: none;
 
-    @include mq($desktop) {
+    @include mq(desktop) {
       display: flex;
       width: 100%;
       text-transform: lowercase;
@@ -82,7 +82,7 @@
   &__form-button {
     display: none;
 
-    @include mq($desktop) {
+    @include mq(desktop) {
       display: flex;
     }
   }
@@ -144,11 +144,11 @@
   background-position: center;
   overflow-y: scroll;
 
-  @include mq($tablet) {
+  @include mq(tablet) {
     padding: 140px 40px;
   }
 
-  @include mq($desktop) {
+  @include mq(desktop) {
     display: none;
   }
 
@@ -198,7 +198,7 @@
       text-transform: capitalize;
 
       &--active {
-        color: var(--color-accent);
+        color: var(--color-orange-red);
       }
     }
   }
@@ -278,7 +278,7 @@
     animation-fill-mode: forwards;
   }
 
-  @include mq($desktop) {
+  @include mq(desktop) {
     display: none;
   }
 }
