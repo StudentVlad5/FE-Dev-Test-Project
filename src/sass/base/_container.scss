@@ -4,6 +4,11 @@
     padding: 0 20px;
 
     @include mq(desktop) {
-        max-width: $desktop;
+        max-width: calc($desktop - 40px);
+    }
+
+    &--blue {
+        background-color: var(--color-dark-blue);
+        border-radius: 20px;
     }
 }

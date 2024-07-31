@@ -34,7 +34,10 @@ a,
   }
 }
 
-// no-padding
+address {
+  font-style: normal;
+}
+
 %no-padding {
   padding: 0;
 }

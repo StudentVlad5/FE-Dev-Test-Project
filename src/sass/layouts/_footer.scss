@@ -1,18 +1,24 @@
 .footer {
-    position: relative;
-
     padding-top: 40px;
     padding-bottom: 20px;
     background-color: var(--color-dark-blue);
 
     @include mq(desktop) {
-        padding: 45px;
-        background-color: none;
+        background-color: var(--color-white);
     }
 
     &__container {
+        position: relative;
+
         @include mq(desktop) {
+            padding: 45px;
             background-color: var(--color-dark-blue);
+        }
+    }
+
+    &__logo {
+        @include mq(desktop) {
+            margin-left: auto;
         }
     }
 
@@ -21,8 +27,6 @@
 
         font-size: 18px;
         font-weight: 400;
-        line-height: auto;
-        letter-spacing: 0%;
         text-align: left;
 
         color: var(--color-white);
@@ -51,14 +55,23 @@
             line-height: 140%;
             letter-spacing: 0%;
         }
+
+        &--accent {
+            opacity: 100%;
+        }
+
+        &--upper {
+            font-size: 16px;
+        }
     }
 
     & .social-links {
         position: absolute;
-        top: 42px;
+        top: 2px;
         right: 30px;
 
         @include mq(desktop) {
+            top: auto;
             bottom: 47px;
             right: 45px;
         }
@@ -69,11 +82,11 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    // row-gap: 32px;
+    justify-content: space-between;
 
     margin-top: 68px;
 
-    & div {
+    & ul {
         width: 50%;
     }
 
@@ -83,4 +96,57 @@
         align-items: flex-start;
         gap: 10px;
     }
+}
+
+.address {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    column-gap: 30px;
+    row-gap: 41px;
+
+    margin-top: 86px;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 13px;
+    }
+}
+
+.offices {
+    margin-top: 78px;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+    }
+}
+
+.certifications {
+    margin-top: 40px;
+
+    &__list {
+        display: flex;
+
+        & li {
+            width: 50%;
+
+            &>p {
+                margin-bottom: 13px;
+            }
+        }
+    }
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+
+    margin-top: 78px;
 }
