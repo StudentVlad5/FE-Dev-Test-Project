@@ -21,6 +21,7 @@
     text-transform: lowercase;
     text-transform: capitalize;
     margin: 10px 0 107px;
+    border-top: 1px solid gray;
     @media screen and (min-width: $desktop) {
       width: calc(50%);
       font-size: var(--font-size-24);
@@ -304,28 +305,6 @@
       width: 100%;
       flex-wrap: nowrap;
       justify-content: space-between;
-    }
-    &-btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 38px;
-      height: 33px;
-      border-radius: 50%;
-      background: var(--color-white);
-      cursor: pointer;
-      @media screen and (min-width: $desktop) {
-        width: 53px;
-        height: 53px;
-      }
-    }
-    &-img {
-      width: 16px;
-      height: 16px;
-      @media screen and (min-width: $desktop) {
-        width: 18px;
-        height: 18px;
-      }
     }
   }
 }
