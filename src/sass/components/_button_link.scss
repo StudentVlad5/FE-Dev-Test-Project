@@ -1,0 +1,27 @@
+.btn-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 33px;
+  border-radius: 50%;
+  background: var(--color-white);
+  cursor: pointer;
+  @media screen and (min-width: $desktop) {
+    width: 53px;
+    height: 53px;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.075);
+  }
+  &-img {
+    width: 16px;
+    height: 16px;
+    @media screen and (min-width: $desktop) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.section .services {
+  &__container {
+    width: 100%;
+    @media screen and (min-width: $desktop) {
+      padding-left: 39px;
+      padding-right: 39px;
+    }
+    &-wrap {
+      @media screen and (min-width: $desktop) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+    }
+  }
+  &__title {
+    color: var(--color-orange-red);
+    font-size: var(--font-size-20);
+    line-height: 130%;
+    text-transform: lowercase;
+    text-transform: capitalize;
+    margin: 10px 0 107px;
+    border-top: 1px solid gray;
+    @media screen and (min-width: $desktop) {
+      width: calc(50%);
+      font-size: var(--font-size-24);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 110%;
+      letter-spacing: -1px;
+      margin: 16px 0 107px;
+    }
+  }
+}
