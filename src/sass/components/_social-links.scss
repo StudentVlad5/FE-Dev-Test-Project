@@ -28,12 +28,13 @@
 
         &:hover,
         &:focus {
-            color: var(--color-white);
+            color: var(--color-dark-blue);
             background-color: var(--color-orange-red);
         }
     }
 
     &__icon {
         fill: currentColor;
+        stroke: currentColor;
     }
 }
