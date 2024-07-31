@@ -9,7 +9,10 @@
     margin-top: 90px;
 
     @include mq(desktop) {
-        margin-top: 30px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 0;
     }
 
     &__title {
@@ -22,6 +25,13 @@
         gap: 13px;
 
         width: 100%;
+
+        @include mq(desktop) {
+            flex-wrap: wrap;
+            flex-direction: row;
+            row-gap: 19px;
+            column-gap: 14px;
+        }
     }
 
     &__input {
@@ -65,13 +75,11 @@
         &:focus~span,
         &:not(:placeholder-shown)~span {
             color: red;
-            transform: translate(0, 0);
-
-            color: var(--cl-txt-grey);
             font-size: 10px;
             line-height: 13.83px;
             /* 138.298% */
             letter-spacing: -0.221px;
+            transform: translate(0, 0);
         }
     }
 
@@ -85,13 +93,16 @@
         padding: 18px;
 
         font-size: 18px;
-        line-height: auto;
 
         border: 1px solid var(--color-white);
         border-radius: 13px;
 
         & svg {
             fill: var(--color-orange-red)
+        }
+
+        @include mq(desktop) {
+            max-width: 724px;
         }
     }
 }

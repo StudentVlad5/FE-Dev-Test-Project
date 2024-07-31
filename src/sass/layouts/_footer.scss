@@ -12,7 +12,12 @@
 
         @include mq(desktop) {
             padding: 45px;
+
             background-color: var(--color-dark-blue);
+            background-image: url('../images/footer/Frame 116046637.svg');
+            background-repeat: no-repeat;
+            background-position: top right, center;
+            background-size: cover;
         }
     }
 
@@ -35,7 +40,6 @@
             margin-bottom: 44px;
             font-size: 20px;
             line-height: 140%;
-            letter-spacing: 0%;
         }
     }
 
@@ -43,17 +47,14 @@
         font-size: 14px;
         font-weight: 400;
         line-height: 115%;
-        letter-spacing: 0%;
         text-align: left;
 
         color: var(--color-white);
         opacity: 50%;
 
         @include mq(desktop) {
-            margin-bottom: 44px;
-            font-size: 20px;
+            font-size: 16px;
             line-height: 140%;
-            letter-spacing: 0%;
         }
 
         &--accent {
@@ -78,16 +79,53 @@
     }
 }
 
+.grid {
+    @include mq(desktop) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        column-gap: 300px;
+        row-gap: 145px;
+
+        margin-top: 30px;
+    }
+}
+
+.group {
+    @include mq(desktop) {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        column-gap: 100px;
+    }
+}
+
 .info {
     display: flex;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-end;
 
     margin-top: 68px;
 
+    @include mq(desktop) {
+        order: -1;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 0;
+    }
+
+    & li {
+        @include mq(no-desktop) {
+            width: 50%;
+        }
+    }
+
     & ul {
-        width: 50%;
+        @include mq(no-desktop) {
+            width: 50%;
+        }
     }
 
     &-item {
@@ -108,6 +146,10 @@
 
     margin-top: 86px;
 
+    @include mq(desktop) {
+        margin-top: 0;
+    }
+
     &__item {
         display: flex;
         flex-direction: column;
@@ -119,6 +161,10 @@
 .offices {
     margin-top: 78px;
 
+    @include mq(desktop) {
+        margin-top: 0;
+    }
+
     &__list {
         display: flex;
         flex-direction: column;
@@ -129,14 +175,30 @@
 .certifications {
     margin-top: 40px;
 
+    @include mq(desktop) {
+        margin-top: 0;
+    }
+
     &__list {
         display: flex;
+
+        @include mq(desktop) {
+            gap: 56px;
+        }
 
         & li {
             width: 50%;
 
             &>p {
                 margin-bottom: 13px;
+            }
+        }
+
+        & ul {
+            @include mq(desktop) {
+                display: flex;
+                flex-wrap: wrap;
+                max-height: 103px;
             }
         }
     }
@@ -149,4 +211,10 @@
     gap: 7px;
 
     margin-top: 78px;
+
+    @include mq(desktop) {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 366px;
+    }
 }
