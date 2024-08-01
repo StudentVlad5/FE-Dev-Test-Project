@@ -15,6 +15,7 @@ import aboutpic2 from "../images/about/pic2.svg";
 
 export const heroServices = [
   {
+    id: "highway",
     title: "Highway & Road",
     url: "https://",
     pics: pic1,
@@ -25,17 +26,19 @@ export const heroServices = [
     ],
   },
   {
+    id: "transportation",
     title: "Transportation Planning",
     url: "https://",
     pics: pic2,
     arrow,
     description: [
-      "OOTHON’s reputable construction management services have provided critical support in the delivery of many high-profile projects, including the $2.5 billion Katy Freeway Reconstruction Project, Bush Intercontinental Airport Rehabilitation, Houston Toyota Center, 2013 Fort Bend Mobility Bond Program and the $1.5 billion US 290 Reconstruction Project.",
+      "OTHON’s reputable construction management services have provided critical support in the delivery of many high-profile projects, including the $2.5 billion Katy Freeway Reconstruction Project, Bush Intercontinental Airport Rehabilitation, Houston Toyota Center, 2013 Fort Bend Mobility Bond Program and the $1.5 billion US 290 Reconstruction Project.",
       "We assist our clients by providing a comprehensive array of services aimed to facilitate construction from opening to final completion including Construction Management and Inspection Services, Scheduling and Mitigation Strategies, and Public Involvement and Community Outreach services.",
       "OTHON provides comprehensive constructability review for all design components and recommendation of the contractor’s schedule, troubleshooting field problems, review of contractor’s change orders, coordination with agencies and adjacent projects, and time impact analysis. Through effective management and coordination from project kick-off to close-out, our Construction Services team is committed to delivering projects on time and under budget.",
     ],
   },
   {
+    id: "design",
     title: "Design Build Services",
     url: "https://",
     pics: pic3,
@@ -46,17 +49,19 @@ export const heroServices = [
     ],
   },
   {
+    id: "water",
     title: "Water",
     url: "https://",
     pics: pic4,
     arrow,
     description: [
-      "OOTHON’s reputable construction management services have provided critical support in the delivery of many high-profile projects, including the $2.5 billion Katy Freeway Reconstruction Project, Bush Intercontinental Airport Rehabilitation, Houston Toyota Center, 2013 Fort Bend Mobility Bond Program and the $1.5 billion US 290 Reconstruction Project.",
+      "OTHON’s reputable construction management services have provided critical support in the delivery of many high-profile projects, including the $2.5 billion Katy Freeway Reconstruction Project, Bush Intercontinental Airport Rehabilitation, Houston Toyota Center, 2013 Fort Bend Mobility Bond Program and the $1.5 billion US 290 Reconstruction Project.",
       "We assist our clients by providing a comprehensive array of services aimed to facilitate construction from opening to final completion including Construction Management and Inspection Services, Scheduling and Mitigation Strategies, and Public Involvement and Community Outreach services.",
       "OTHON provides comprehensive constructability review for all design components and recommendation of the contractor’s schedule, troubleshooting field problems, review of contractor’s change orders, coordination with agencies and adjacent projects, and time impact analysis. Through effective management and coordination from project kick-off to close-out, our Construction Services team is committed to delivering projects on time and under budget.",
     ],
   },
   {
+    id: "bridges",
     title: "Bridges",
     url: "https://",
     pics: pic5,
@@ -67,12 +72,13 @@ export const heroServices = [
     ],
   },
   {
+    id: "construction",
     title: "Construction Services",
     url: "https://",
     pics: pic6,
     arrow,
     description: [
-      "OOTHON’s reputable construction management services have provided critical support in the delivery of many high-profile projects, including the $2.5 billion Katy Freeway Reconstruction Project, Bush Intercontinental Airport Rehabilitation, Houston Toyota Center, 2013 Fort Bend Mobility Bond Program and the $1.5 billion US 290 Reconstruction Project.",
+      "OTHON’s reputable construction management services have provided critical support in the delivery of many high-profile projects, including the $2.5 billion Katy Freeway Reconstruction Project, Bush Intercontinental Airport Rehabilitation, Houston Toyota Center, 2013 Fort Bend Mobility Bond Program and the $1.5 billion US 290 Reconstruction Project.",
       "We assist our clients by providing a comprehensive array of services aimed to facilitate construction from opening to final completion including Construction Management and Inspection Services, Scheduling and Mitigation Strategies, and Public Involvement and Community Outreach services.",
       "OTHON provides comprehensive constructability review for all design components and recommendation of the contractor’s schedule, troubleshooting field problems, review of contractor’s change orders, coordination with agencies and adjacent projects, and time impact analysis. Through effective management and coordination from project kick-off to close-out, our Construction Services team is committed to delivering projects on time and under budget.",
     ],

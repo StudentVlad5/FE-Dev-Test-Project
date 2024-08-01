@@ -1,12 +1,12 @@
 .section .about {
   &__container {
     width: 100%;
-    @media screen and (min-width: $desktop) {
+    @include mq(desktop) {
       padding-left: 39px;
       padding-right: 39px;
     }
     &-wrap {
-      @media screen and (min-width: $desktop) {
+      @include mq(desktop) {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -21,8 +21,7 @@
     text-transform: lowercase;
     text-transform: capitalize;
     margin: 10px 0 107px;
-    border-top: 1px solid gray;
-    @media screen and (min-width: $desktop) {
+    @include mq(desktop) {
       width: calc(50%);
       font-size: var(--font-size-24);
       font-style: normal;
@@ -33,14 +32,14 @@
     }
     &-container {
       padding-bottom: 70px;
-      @media screen and (min-width: $desktop) {
+      @include mq(desktop) {
         width: 50%;
         border-top: 1px solid gray;
       }
     }
     &.upperline {
       margin-bottom: 97px;
-      @media screen and (min-width: $desktop) {
+      @include mq(desktop) {
         margin-bottom: 265.5px;
       }
     }
@@ -53,7 +52,7 @@
     line-height: 31px;
     text-transform: none;
     margin-bottom: 48px;
-    @media screen and (min-width: $desktop) {
+    @include mq(desktop) {
       font-size: var(--font-size-34);
       font-style: normal;
       font-weight: 400;
@@ -69,7 +68,7 @@
   &__list {
     display: flex;
     flex-direction: column;
-    @media screen and (min-width: $desktop) {
+    @include mq(desktop) {
       width: calc(50%);
     }
   }
@@ -79,7 +78,7 @@
     width: 100%;
     min-width: 375px;
     height: 480px;
-    @media screen and (min-width: $desktop) {
+    @include mq(desktop) {
       margin: 100px 0;
       height: 904px;
       width: 100%;
@@ -98,7 +97,7 @@
     }
   }
   &__container-wrap {
-    @media screen and (min-width: $desktop) {
+    @include mq(desktop) {
       display: flex;
       width: 100%;
     }
@@ -109,7 +108,7 @@
       flex-direction: column;
       flex-wrap: nowrap;
       gap: 20px;
-      @media screen and (min-width: $desktop) {
+      @include mq(desktop) {
         display: flex;
         flex-direction: row;
       }
@@ -120,7 +119,7 @@
     font-weight: 400;
     line-height: normal;
     color: var(--color-dark-blue);
-    @media screen and (min-width: $desktop) {
+    @include mq(desktop) {
       font-size: var(--font-size-22);
     }
   }
@@ -132,7 +131,7 @@
       padding-bottom: 50px;
       border-bottom: 1px solid gray;
     }
-    @media screen and (min-width: $desktop) {
+    @include mq(desktop) {
       padding-top: 60px;
       &:not(:last-child) {
         padding-bottom: 66px;
@@ -145,7 +144,7 @@
       margin-bottom: 25px;
       text-transform: lowercase;
       text-transform: capitalize;
-      @media screen and (min-width: $desktop) {
+      @include mq(desktop) {
         font-size: var(--font-size-34);
         max-width: 750px;
         margin-bottom: 30px;
@@ -155,7 +154,7 @@
       color: var(--color-dark-blue);
       font-size: var(--font-size-16);
       font-style: normal;
-      @media screen and (min-width: $desktop) {
+      @include mq(desktop) {
         font-size: var(--font-size-22);
         max-width: 750px;
       }
@@ -166,7 +165,7 @@
     flex-direction: column;
     justify-content: start;
     width: 100%;
-    @media screen and (min-width: $desktop) {
+    @include mq(desktop) {
       width: 50%;
     }
     &-globus {
@@ -179,7 +178,7 @@
       background-color: var(--color-alice-blue);
       border-radius: 13px;
       margin-bottom: 60px;
-      @media screen and (min-width: $desktop) {
+      @include mq(desktop) {
         padding: 40px;
         width: 100%;
         height: 100%;
@@ -190,7 +189,7 @@
       width: 38px;
       height: 38px;
       margin-bottom: 127px;
-      @media screen and (min-width: $desktop) {
+      @include mq(desktop) {
         width: 53.5px;
         height: 53.5px;
         position: absolute;
@@ -204,12 +203,13 @@
     flex-direction: column;
     width: 100%;
     gap: 58px;
-    @media screen and (min-width: $desktop) {
+    @include mq(desktop) {
       flex-direction: row;
+      height: 635px;
       gap: 21px;
     }
     &-wrap {
-      @media screen and (min-width: $desktop) {
+      @include mq(desktop) {
         position: relative;
         display: grid;
         width: 100%;
@@ -224,16 +224,17 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      @media screen and (min-width: $desktop) {
+      height: auto;
+      @include mq(desktop) {
         &:first-child {
-          width: 435px;
+          width: 700px;
         }
       }
     }
     &-img {
       border-radius: 13px;
       margin-bottom: 40px;
-      @media screen and (min-width: $desktop) {
+      @include mq(desktop) {
         width: 435px;
         height: 435px;
         transform: translateY(-435px);
@@ -248,7 +249,7 @@
       font-size: var(--font-size-16);
       font-style: normal;
       text-align: left;
-      @media screen and (min-width: $desktop) {
+      @include mq(desktop) {
         font-size: var(--font-size-22);
         transform: translateY(-435px);
         margin-top: 110px;
@@ -272,7 +273,7 @@
     margin-top: 88px;
     padding: 20px 16px 16px 18px;
     background-color: var(--color-dark-blue);
-    @media screen and (min-width: $desktop) {
+    @include mq(desktop) {
       width: 579px;
       height: 301px;
       margin-top: 364px;
@@ -285,7 +286,7 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal;
-      @media screen and (min-width: $desktop) {
+      @include mq(desktop) {
         font-size: var(--font-size-20);
       }
     }
@@ -294,7 +295,7 @@
       font-size: var(--font-size-18);
       font-style: normal;
       font-weight: 400;
-      @media screen and (min-width: $desktop) {
+      @include mq(desktop) {
         font-size: var(--font-size-34);
         letter-spacing: -1px;
         max-width: 383px;
