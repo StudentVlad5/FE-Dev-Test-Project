@@ -84,7 +84,6 @@
 
 .upperline {
   border-top: 1px solid grey;
-
   @include mq(desktop) {
     border-top: none;
   }
@@ -99,4 +98,7 @@
   @include mq(desktop) {
     transform: translateY(-140px);
   }
+}
+.active {
+  color: var(--color-orange-red);
 }

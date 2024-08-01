@@ -7,7 +7,7 @@
   border-radius: 50%;
   background: var(--color-white);
   cursor: pointer;
-  @media screen and (min-width: $desktop) {
+  @include mq(desktop) {
     width: 53px;
     height: 53px;
   }
@@ -19,7 +19,7 @@
   &-img {
     width: 16px;
     height: 16px;
-    @media screen and (min-width: $desktop) {
+    @include mq(desktop) {
       width: 18px;
       height: 18px;
     }
