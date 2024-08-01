@@ -1,4 +1,5 @@
 .form {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -9,7 +10,10 @@
     margin-top: 90px;
 
     @include mq(desktop) {
-        margin-top: 30px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 0;
     }
 
     &__title {
@@ -22,6 +26,13 @@
         gap: 13px;
 
         width: 100%;
+
+        @include mq(desktop) {
+            flex-wrap: wrap;
+            flex-direction: row;
+            row-gap: 19px;
+            column-gap: 14px;
+        }
     }
 
     &__input {
@@ -33,7 +44,6 @@
 
         font-size: 16px;
         line-height: 140%;
-        letter-spacing: 0;
 
         color: var(--color-dark-blue);
 
@@ -64,14 +74,9 @@
         &:hover~span,
         &:focus~span,
         &:not(:placeholder-shown)~span {
-            color: red;
-            transform: translate(0, 0);
-
-            color: var(--cl-txt-grey);
-            font-size: 10px;
-            line-height: 13.83px;
-            /* 138.298% */
-            letter-spacing: -0.221px;
+            color: #FF0000;
+            font-size: 16px;
+            line-height: 140%;
         }
     }
 
@@ -82,16 +87,22 @@
         gap: 10px;
 
         width: 100%;
-        padding: 18px;
+        padding: 18px 29px;
 
         font-size: 18px;
-        line-height: auto;
 
         border: 1px solid var(--color-white);
         border-radius: 13px;
 
         & svg {
             fill: var(--color-orange-red)
+        }
+
+        @include mq(desktop) {
+            max-width: 724px;
+            max-height: 50px;
+            font-size: 20px;
+            line-height: 140%;
         }
     }
 }

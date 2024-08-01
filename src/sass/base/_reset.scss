@@ -34,7 +34,31 @@ a,
   }
 }
 
-// no-padding
+.link {
+  &--white {
+
+    &:hover,
+    &:focus {
+      color: var(--color-white);
+      opacity: 1;
+    }
+  }
+
+  &--underline {
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      color: var(--color-white);
+      opacity: 1;
+    }
+  }
+}
+
+address {
+  font-style: normal;
+}
+
 %no-padding {
   padding: 0;
 }
