@@ -11,6 +11,8 @@
         position: relative;
 
         @include mq(desktop) {
+            width: 1880px;
+            // height: 834px;
             padding: 45px;
 
             background-color: var(--color-dark-blue);
@@ -169,6 +171,20 @@
         display: flex;
         flex-direction: column;
         gap: 26px;
+
+        & span.mobile {
+            @include mq(desktop) {
+                display: none;
+            }
+        }
+
+        & span.desktop {
+            display: none;
+
+            @include mq(desktop) {
+                display: block;
+            }
+        }
     }
 }
 
@@ -215,6 +231,8 @@
     @include mq(desktop) {
         flex-direction: row;
         justify-content: space-between;
+
         margin-right: 366px;
+        margin-top: 63px;
     }
 }
