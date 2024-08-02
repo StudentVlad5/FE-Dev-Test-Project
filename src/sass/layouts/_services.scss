@@ -63,6 +63,7 @@
 }
 .services {
   &__container--desktop {
+    display: none;
     @include mq(desktop) {
       display: flex;
       flex-direction: row;
