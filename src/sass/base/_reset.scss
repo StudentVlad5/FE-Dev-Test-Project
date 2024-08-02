@@ -62,3 +62,17 @@ address {
 %no-padding {
   padding: 0;
 }
+
+.mobile {
+  @include mq(desktop) {
+    display: none;
+  }
+}
+
+.desktop {
+  display: none;
+
+  @include mq(desktop) {
+    display: inline-block;
+  }
+}
