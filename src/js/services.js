@@ -25,6 +25,7 @@ const swiper = new Swiper(".swiper", {
   let description = "";
   heroServices.forEach(
     (it) => (
+      (description = ""),
       it.description.forEach(
         (k) =>
           (description =
