@@ -22,9 +22,9 @@ const swiper = new Swiper(".swiper", {
 // add swiper to mobile section
 (function addServicesSliders() {
   let servicesSliders = "";
+  let description = "";
   heroServices.forEach(
     (it) => (
-      (description = ""),
       it.description.forEach(
         (k) =>
           (description =
