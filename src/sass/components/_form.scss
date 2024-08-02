@@ -92,12 +92,6 @@
             transition: opacity var(--animation);
         }
 
-        // &.invalid {
-        //     .form__input::placeholder {
-        //         opacity: 0;
-        //     }
-        // }
-
         &.invalid~span {
             display: block;
         }
