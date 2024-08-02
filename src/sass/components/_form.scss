@@ -35,6 +35,21 @@
         }
     }
 
+    &__field {
+        position: relative;
+
+        & span {
+            display: none;
+            position: absolute;
+            top: 13px;
+            left: 17px;
+
+            color: #FF0000;
+            font-size: 16px;
+            line-height: 140%;
+        }
+    }
+
     &__input {
         display: flex;
 
@@ -64,6 +79,12 @@
             opacity: 1;
         }
 
+        &.opacity {
+            &::placeholder {
+                opacity: 0;
+            }
+        }
+
         // &:hover::placeholder,
         &:focus::placeholder {
             opacity: 0.2;
@@ -71,12 +92,14 @@
             transition: opacity var(--animation);
         }
 
-        &:hover~span,
-        &:focus~span,
-        &:not(:placeholder-shown)~span {
-            color: #FF0000;
-            font-size: 16px;
-            line-height: 140%;
+        // &.invalid {
+        //     .form__input::placeholder {
+        //         opacity: 0;
+        //     }
+        // }
+
+        &.invalid~span {
+            display: block;
         }
     }
 

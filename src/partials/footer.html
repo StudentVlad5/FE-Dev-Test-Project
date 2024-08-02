@@ -51,10 +51,22 @@
       <form class="form" name="form-contacts" autocomplete="on" id="form">
         <h2 class="form__title subtitle subtitle--white">Contact Us</h2>
         <div class="form__fields">
-          <input class="form__input" type="text" name="user-name" placeholder="Your Name" required />
-          <input class="form__input" type="email" name="user-email" placeholder="Your Email" required />
-          <input class="form__input" type="text" name="user-subject" placeholder="Subject" required />
-          <input class="form__input" type="text" name="user-message" placeholder="Your Message" required />
+          <label class="form__field">
+            <input class="form__input" type="text" name="user-name" placeholder="Your Name" required />
+            <span>This is a required field.</span>
+          </label>
+          <label class="form__field">
+            <input class="form__input" type="email" name="user-email" placeholder="Your Email" required />
+            <span>This is a required field.</span>
+          </label>
+          <label class="form__field">
+            <input class="form__input" type="text" name="user-subject" placeholder="Subject" required />
+            <span>This is a required field.</span>
+          </label>
+          <label class="form__field">
+            <input class="form__input" type="text" name="user-message" placeholder="Your Message" required />
+            <span>This is a required field.</span>
+          </label>
         </div>
         <button type="submit" class="form__btn btn" id="send">
           <span>Send Message</span>
@@ -215,9 +227,10 @@
       <a class="footer__desc footer__desc--accent link link--underline" href="https://"
         aria-label="Terms and Conditions" target="_blank" rel="noopener noreferrer">Terms and Conditions</a>
       <a class="footer__desc footer__desc--accent link link--underline" href="https://" aria-label="Privacy Policy"
-        target="_blank" rel="noopener noreferrer" style="order: 4;">Privacy Policy</a>
-      <p class="footer__desc footer__desc--accent" style="order: -1;">&#169; 2024 OTHON, INC. All Rights Reserved.</p>
-      <a class="footer__desc footer__desc--accent link link--white"><span class="footer__desc link--white">Created with
+        target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+      <p class="footer__desc footer__desc--accent">&#169; 2024 OTHON, INC. All Rights Reserved.</p>
+      <a class="footer__desc footer__desc--accent link link--white desktop"><span
+          class="footer__desc link--white">Created with
           ♡ by
         </span>DD.NYC®</a>
     </div>

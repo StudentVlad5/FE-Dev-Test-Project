@@ -119,13 +119,13 @@
     }
 
     & li {
-        @include mq(no-desktop) {
+        @include mq(not-desktop) {
             width: 50%;
         }
     }
 
     & ul {
-        @include mq(no-desktop) {
+        @include mq(not-desktop) {
             width: 50%;
         }
     }
@@ -171,20 +171,6 @@
         display: flex;
         flex-direction: column;
         gap: 26px;
-
-        & span.mobile {
-            @include mq(desktop) {
-                display: none;
-            }
-        }
-
-        & span.desktop {
-            display: none;
-
-            @include mq(desktop) {
-                display: block;
-            }
-        }
     }
 }
 
@@ -234,5 +220,13 @@
 
         margin-right: 366px;
         margin-top: 63px;
+
+        &:nth-child(3) {
+            order: -1;
+        }
+
+        &:nth-child(4) {
+            order: 4;
+        }
     }
 }
