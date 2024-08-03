@@ -1,0 +1,58 @@
+.controls {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 70px;
+  left: -20px;
+  min-width: 375px;
+  background: linear-gradient(
+    180deg,
+    rgba(24, 50, 108, 1) 0%,
+    rgba(24, 50, 108, 1) 12%,
+    rgba(24, 48, 108, 0.25262605042016806) 100%
+  );
+  transition: opacity 0.2s;
+  @include mq(desktop) {
+    top: 30px;
+    right: 30px;
+  }
+}
+.video-player.playing .controls {
+  opacity: 0;
+}
+
+.video-player:hover .controls {
+  opacity: 1;
+}
+.control-button {
+  border: none;
+  background: transparent;
+  width: 41px;
+  height: 41px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.2s;
+  & > img {
+    width: 20px;
+    height: 20px;
+    @include mq(desktop) {
+      width: 41px;
+      height: 41px;
+    }
+  }
+}
+
+.control-button:hover {
+  opacity: 1;
+}
+
+.control-button svg {
+  stroke: var(--color-white);
+  fill: transparent;
+}
+.control-button.sound-button {
+  height: 40px;
+  width: 40px;
+}

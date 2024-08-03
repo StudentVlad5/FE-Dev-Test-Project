@@ -30,6 +30,7 @@
   }
   &__container {
     width: 100%;
+    padding: 0 20px;
     @include mq(desktop) {
       padding-left: 39px;
       padding-right: 39px;
@@ -136,7 +137,7 @@
     {
       right: 0;
       transition: all var(--animation_services);
-      z-index: 10;
+      z-index: 9;
     }
   }
   &__img {
