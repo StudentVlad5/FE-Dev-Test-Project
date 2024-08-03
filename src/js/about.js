@@ -22,3 +22,20 @@ import { aboutHistory } from "./DATA";
   );
   document.querySelector(".about__listOfHistory").innerHTML = aboutInfo;
 })();
+
+// play|stop video
+const videoContainer = document.querySelectorAll("#about__video")[0];
+window.addEventListener("scroll", function elementIsVisibleInViewport() {
+  const { top, bottom } = videoContainer.getBoundingClientRect();
+  const { innerHeight } = window;
+  if ((top > 0 && top < innerHeight) || (bottom > 0 && bottom < innerHeight)) {
+    videoContainer.play();
+  } else {
+    videoContainer.pause();
+  }
+});
+const soundButton = document.querySelectorAll(".sound-button")[0];
+soundButton.addEventListener("click", function () {
+  videoContainer.muted = !videoContainer.muted;
+  soundButton.innerHTML = videoContainer.muted ? mute : sound;
+});

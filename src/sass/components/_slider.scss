@@ -5,6 +5,11 @@
   @include mq(desktop) {
     display: none;
   }
+  &-slide.services {
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+  }
   &-control {
     position: absolute;
     top: 0;
@@ -26,6 +31,7 @@
   }
   &-description {
     display: flex;
+    height: 100%;
     flex-direction: column;
     gap: 30px;
     padding: 30px 20px 80px;

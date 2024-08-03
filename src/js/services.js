@@ -33,7 +33,7 @@ const swiper = new Swiper(".swiper", {
       ),
       (servicesSliders =
         servicesSliders +
-        `<div class="swiper-slide"><div class="swiper-title"><p class="swiper-subtitle">${it.title}</p></div><div class="swiper-description" style="background:linear-gradient(180deg,rgba(24, 50, 108, 1) 0%,rgba(24, 50, 108, 1) 12%,rgba(24, 48, 108, 0.25262605042016806) 100%), url(${it.pics}); background-size: cover; background-position: center center;background-repeat: no-repeat">${description}</div><a class="swiper-link" href="#${it.title}" aria-label="${it.title}"><div class="btn-link"><img class="btn-link-img" src="${arrow}"alt="link to ${it.title}"/></div></a></div></div>`)
+        `<div class="swiper-slide services"><div class="swiper-title"><p class="swiper-subtitle">${it.title}</p></div><div class="swiper-description" style="background:linear-gradient(180deg,rgba(24, 50, 108, 1) 0%,rgba(24, 50, 108, 1) 12%,rgba(24, 48, 108, 0.25262605042016806) 100%), url(${it.pics}); background-size: cover; background-position: center center;background-repeat: no-repeat">${description}</div><a class="swiper-link" href="#${it.title}" aria-label="${it.title}"><div class="btn-link"><img class="btn-link-img" src="${arrow}"alt="link to ${it.title}"/></div></a></div></div>`)
     )
   );
 
