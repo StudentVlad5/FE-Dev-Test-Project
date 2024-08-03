@@ -2,8 +2,7 @@
 
 @font-face {
   font-family: 'Satoshi-Regular';
-  src: URL('../font/Satoshi_Complete/OTF/Satoshi-Regular.otf')
-    format('truetype');
+  src: URL('../font/Satoshi_Complete/OTF/Satoshi-Regular.otf') format('truetype');
 }
 
 html {
@@ -18,14 +17,4 @@ body {
   overflow: unset;
   color: var(--color-dark-blue);
   overflow-y: scroll;
-}
-
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-title {
-  font-family: var(--font-family-title);
 }

@@ -2,7 +2,7 @@
   width: 100%;
   max-width: $mobile;
   margin: 0 auto;
-  // padding: 0 20px;
+  padding: 0 20px;
 
   @include mq(desktop) {
     max-width: calc($desktop - 40px);
@@ -10,6 +10,6 @@
 
   &--blue {
     background-color: var(--color-dark-blue);
-    border-radius: 20px;
+    border-radius: 13px;
   }
 }
