@@ -5,10 +5,7 @@
 
   refs.form.addEventListener('submit', function (e) {
     e.preventDefault();
-    // console.log('e:', e);
-    // [...e.target.form.querySelectorAll('.form__input')].forEach(
-    //   elm => (elm.value = '')
-    // );
+    form.reset();
   });
 
   refs.form.addEventListener(

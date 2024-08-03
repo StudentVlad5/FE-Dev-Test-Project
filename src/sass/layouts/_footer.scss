@@ -1,12 +1,17 @@
 .footer {
     padding-top: 40px;
     padding-bottom: 20px;
-    background-color: var(--color-dark-blue);
 
     @include mq(not-desktop) {
         width: 375px;
         margin: 0 auto;
         border-top: 1px solid var(--color-white);
+
+        background-color: var(--color-dark-blue);
+        background-image: url('../images/footer/Group 116046529.svg');
+        background-repeat: no-repeat;
+        background-position: 89px 0, center;
+        background-size: cover;
     }
 
     @include mq(desktop) {
@@ -19,7 +24,6 @@
 
         @include mq(desktop) {
             width: 1880px;
-            // height: 834px;
             padding: 45px;
 
             background-color: var(--color-dark-blue);

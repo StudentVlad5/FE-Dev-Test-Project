@@ -93,8 +93,12 @@
             transition: opacity var(--animation);
         }
 
-        &.invalid~span {
-            display: block;
+        &.invalid {
+            color: var(--color-white);
+
+            &~span {
+                display: block;
+            }
         }
     }
 
