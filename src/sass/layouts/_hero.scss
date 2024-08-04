@@ -14,13 +14,13 @@
     width: 335px;
     height: 554px;
     border-radius: 20px;
-    background: url('../images/hero/hero.svg');
+    background: url('../images/hero/hero.webp');
     background-size: cover;
     background-repeat: no-repeat;
 
     @include mq(desktop) {
       width: 100%;
-      background: url('../images/hero/hero_desctop.svg');
+      background: url('../images/hero/hero_desctop.webp');
       justify-content: center;
       align-items: center;
     }

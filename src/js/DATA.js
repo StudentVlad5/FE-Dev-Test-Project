@@ -2,16 +2,16 @@
 export const menu = ["home", "about", "services", "careers"];
 
 // HERO
-import pic1 from "../images/hero/highway_and_road_engineering.svg";
-import pic2 from "../images/hero/transportation_planning.svg";
-import pic3 from "../images/hero/design_build_services.svg";
-import pic4 from "../images/hero/water.svg";
-import pic5 from "../images/hero/bridges.svg";
-import pic6 from "../images/hero/construction_services.svg";
+import pic1 from "../images/hero/highway_and_road_engineering.webp";
+import pic2 from "../images/hero/transportation_planning.webp";
+import pic3 from "../images/hero/design_build_services.webp";
+import pic4 from "../images/hero/water.webp";
+import pic5 from "../images/hero/bridges.webp";
+import pic6 from "../images/hero/construction_services.webp";
 import arrow from "../images/hero/ArrowUp.svg";
 
-import aboutpic1 from "../images/about/pic1.svg";
-import aboutpic2 from "../images/about/pic2.svg";
+import aboutpic1 from "../images/about/pic1.webp";
+import aboutpic2 from "../images/about/pic2.webp";
 
 export const heroServices = [
   {

@@ -37,5 +37,4 @@ window.addEventListener("scroll", function elementIsVisibleInViewport() {
 const soundButton = document.querySelectorAll(".sound-button")[0];
 soundButton.addEventListener("click", function () {
   videoContainer.muted = !videoContainer.muted;
-  soundButton.innerHTML = videoContainer.muted ? mute : sound;
 });
