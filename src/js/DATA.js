@@ -8,7 +8,7 @@ import pic3 from "../images/hero/design_build_services.svg";
 import pic4 from "../images/hero/water.svg";
 import pic5 from "../images/hero/bridges.svg";
 import pic6 from "../images/hero/construction_services.svg";
-import arrow from "../images/hero/arrow.svg";
+import arrow from "../images/arrow.svg";
 
 import aboutpic1 from "../images/about/pic1.svg";
 import aboutpic2 from "../images/about/pic2.svg";

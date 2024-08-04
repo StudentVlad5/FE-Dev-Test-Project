@@ -1,7 +1,7 @@
 import Swiper from "swiper";
 import { Navigation } from "swiper/modules";
 import { heroServices } from "./DATA";
-import arrow from "../images/about/arrow.svg";
+import arrow from "../images/arrow.svg";
 
 // import Swiper and modules styles
 import "swiper/swiper.min.css";

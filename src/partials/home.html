@@ -3,7 +3,7 @@
   <section class="section heroServices" id="home">
     <div class="container">
       <div class="heroServices__container">
-        <h1 class="heroServices__container-title">
+        <h1 class="heroServices__container-title section-title">
           Integrity Innovation Dedication
         </h1>
       </div>
@@ -20,8 +20,6 @@
       <div class="about__video-container">
         <video class="about__video" loop muted id="about__video">
           <source src="./images/about/Barber_1.mp4" type="video/mp4" />
-          <!-- <source src="movie.ogg" type="video/ogg" /> -->
-          <!-- Your browser does not support the video tag. -->
         </video>
         <div class="controls">
           <button
@@ -87,11 +85,9 @@
                 aria-label="about section"
               >
                 <div class="about__card-btn btn-link">
-                  <img
-                    class="about__card-img btn-link-img"
-                    src="images/about/arrow.svg"
-                    alt="link to about"
-                  />
+                  <svg class="about__card-img btn-link-img">
+                    <use href="./images/sprite.svg#arrow-right"></use>
+                  </svg>
                 </div>
               </a>
             </div>
@@ -104,19 +100,19 @@
   <section class="section services move_up" id="services">
     <div class="services__container container">
       <div class="services__container-wrap upperline_container">
-        <h2 class="services__title">services</h2>
+        <h2 class="services__title section-title">services</h2>
       </div>
       <div class="swiper services">
         <div class="swiper-wrapper"></div>
         <div class="swiper-control">
           <img
             class="swiper-button-prev"
-            src="images/about/arrow.svg"
+            src="images/arrow.svg"
             alt="button prev"
           />
           <img
             class="swiper-button-next"
-            src="images/about/arrow.svg"
+            src="images/arrow.svg"
             alt="button next"
           />
         </div>
@@ -132,7 +128,7 @@
   <section class="section careers" id="careers">
     <div class="careers__container container">
       <div class="careers__container-wrap">
-        <h2 class="careers__title">careers</h2>
+        <h2 class="careers__title section-title">careers</h2>
       </div>
       <div class="careers__container-info">
         <h3 class="careers__list-title">Our Offices</h3>
@@ -178,18 +174,20 @@
                 <span>List Job Openings</span>
                 <img
                   class="about__card-img btn-link-img"
-                  src="images/about/arrow.svg"
+                  src="images/arrow.svg"
                   alt="link to list job openings"
-              /></a>
+                />
+              </a>
             </li>
             <li class="careers__process_list-item">
               <a href="#" aria-label="apply form">
                 <span>Apply Now</span>
                 <img
                   class="about__card-img btn-link-img"
-                  src="images/about/arrow.svg"
+                  src="images/arrow.svg"
                   alt="apply form"
-              /></a>
+                />
+              </a>
             </li>
           </ul>
         </div>
