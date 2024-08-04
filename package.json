@@ -3,7 +3,7 @@
   "source": "src/index.html",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://studentvlad5.github.io/othon/",
+  "homepage": "https://othon.vercel.app/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /.//"
