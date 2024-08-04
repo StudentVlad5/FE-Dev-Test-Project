@@ -81,7 +81,6 @@
       background: var(--color-dark-blue);
 
       @include mq(desktop) {
-        // opacity: 1;
         animation: fadeOpacityTo1 var(--animation_services);
         animation-fill-mode: forwards;
         &:hover {
