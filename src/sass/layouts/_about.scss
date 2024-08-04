@@ -318,5 +318,8 @@
       flex-wrap: nowrap;
       justify-content: space-between;
     }
+    &-img {
+      fill: var(--color-orange-red);
+    }
   }
 }
