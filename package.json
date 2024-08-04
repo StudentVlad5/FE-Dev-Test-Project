@@ -1,16 +1,16 @@
 {
-  "name": "FE-Dev-Test-Project",
+  "name": "othon",
   "source": "src/index.html",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://studentvlad5.github.io/FE-Dev-Test-Project/",
+  "homepage": "https://studentvlad5.github.io/othon/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /.//"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/studentvlad5/FE-Dev-Test-Project.git"
+    "url": "git+https://github.com/studentvlad5/othon.git"
   },
   "keywords": [],
   "author": "Vlad",
