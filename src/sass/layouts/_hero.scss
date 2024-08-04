@@ -7,10 +7,21 @@
     opacity: 0;
   }
 }
-
+@keyframes fadeOpacityTo1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .heroServices {
   margin-top: 81px;
-
+  &.section {
+    @include mq(desktop) {
+      margin-bottom: -140px;
+    }
+  }
   &__container {
     display: flex;
     justify-content: end;
@@ -87,10 +98,12 @@
       background: var(--color-dark-blue);
 
       @include mq(desktop) {
-        opacity: 1;
-
+        // opacity: 1;
+        animation: fadeOpacityTo1 var(--animation_services);
+        animation-fill-mode: forwards;
         &:hover {
-          animation: fadeOpacityTo0 2s;
+          animation: fadeOpacityTo0 var(--animation_services);
+          animation-fill-mode: forwards;
         }
       }
     }
@@ -106,7 +119,6 @@
       text-align: left;
       font-weight: 400;
       line-height: normal;
-      text-transform: lowercase;
       text-transform: capitalize;
 
       @include mq(desktop) {

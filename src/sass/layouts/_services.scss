@@ -48,9 +48,10 @@
     color: var(--color-orange-red);
     font-size: var(--font-size-20);
     line-height: 130%;
-    text-transform: lowercase;
     text-transform: capitalize;
-    margin: 10px 0 107px;
+    margin: 0px 0 107px;
+    padding-top: 10px;
+    border-top: 1px solid gray;
     @include mq(desktop) {
       width: calc(50%);
       font-size: var(--font-size-24);
@@ -59,6 +60,7 @@
       line-height: 110%;
       letter-spacing: -1px;
       margin: 16px 0 107px;
+      border: none;
     }
   }
 }

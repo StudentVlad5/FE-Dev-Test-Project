@@ -9,13 +9,14 @@
   }
 
   @include mq(desktop) {
+    padding-bottom: 0;
     border-radius: 13px;
     background-color: var(--color-white);
   }
 
   &__container {
     position: relative;
-    padding: 30px 21px 25px;
+    padding: 30px 21px 0px;
     width: 100%;
 
     background-color: var(--color-dark-blue);
@@ -37,7 +38,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
-    text-transform: lowercase;
     text-transform: capitalize;
     padding-bottom: 91px;
 
@@ -81,7 +81,6 @@
       font-style: normal;
       font-weight: 400;
       line-height: 0;
-      text-transform: lowercase;
       text-transform: capitalize;
       padding-bottom: 14px;
       border-bottom: 1px solid var(--color-white);
@@ -111,7 +110,7 @@
         background-color: var(--color-white);
       }
 
-      &>span {
+      & > span {
         font-size: var(--font-size-14);
       }
 
@@ -119,7 +118,7 @@
         font-size: var(--font-size-24);
         line-height: 31px;
 
-        &>span {
+        & > span {
           font-size: var(--font-size-18);
         }
       }
@@ -219,15 +218,16 @@
       display: flex;
       flex-direction: column;
 
-      &>a {
+      & > a {
         display: flex;
         flex-wrap: nowrap;
         justify-content: start;
+        align-items: center;
         flex-direction: row;
         gap: 8px;
       }
 
-      &>a>span {
+      & > a > span {
         color: var(--color-white);
         font-size: var(--font-size-20);
         font-weight: 400;
@@ -235,8 +235,14 @@
         letter-spacing: 0;
         line-height: 26px;
         letter-spacing: 0;
-        border-bottom: 1px solid var(--color-white);
-
+        transition-property: border;
+        transition-duration: .5s;
+        transition-delay: .5s;
+        border-bottom: 1px solid transparent;
+        &:hover {
+          border-bottom: 1px solid var(--color-white);
+          transition-delay: 0s;
+        }
         @include mq(desktop) {
           font-size: var(--font-size-26);
           line-height: normal;

@@ -95,9 +95,3 @@
     border-top: 1px solid grey;
   }
 }
-
-.section.about.move_up {
-  @include mq(desktop) {
-    transform: translateY(-140px);
-  }
-}
